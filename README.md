@@ -1,3 +1,3 @@
-# other
-some useless files
+# temp
+some temporary files
 

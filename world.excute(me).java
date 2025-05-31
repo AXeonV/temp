@@ -7,7 +7,7 @@ public class Mili {
 		World world = new World(null);
 		world.addThing(me);
 		world.addThing(you);
-		wolrd.startSimulation(0);
+		world.startSimulation(0);
 
 		if (me instanceof PointSet) {
 			you.addAttribute(me.getDimensions().toAttribute());
@@ -70,11 +70,11 @@ public class Mili {
 		}
 		world.unlock(you);
 		world.removeThing(you);
-		me.lookFor(you, wolrd);
-		me.lookFor(you, wolrd);
-		me.lookFor(you, wolrd);
-		me.lookFor(you, wolrd);
-		me.lookFor(you, wolrd);
+		me.lookFor(you, world);
+		me.lookFor(you, world);
+		me.lookFor(you, world);
+		me.lookFor(you, world);
+		me.lookFor(you, world);
 		me.addFeeling("isolation");
 		if (me.getMemory().isErasable()) {
 			me.removeFeeling("disheartened");

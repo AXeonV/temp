@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstring>
 using namespace std;
 const int MAXN = 106;
 struct tSeg {
@@ -27,8 +28,8 @@ void output(tSeg x) {
 	}
 }
 int main() {
-	freopen("data.in", "r", stdin);
-	freopen("data.out", "w", stdout);
+	// freopen("data.in", "r", stdin);
+	// freopen("data.out", "w", stdout);
 	int n; scanf("%d", &n);
 	for (int i = 0; i <= n; ++i)
 		base[i].a[base[i].l = 0] = 1;
@@ -38,8 +39,6 @@ int main() {
 		pt.a[1] = 1;
 		pt.a[0] = -(i - 1);
 		base[i] = mul(base[i - 1], pt);
-		// output(base[i]);
-		// putchar('\n');
 	}
 	for (int k = 1; k <= n; ++k) {
 		int cnt = 1;
